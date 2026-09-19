@@ -891,7 +891,21 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacity+=10000
+                stats.capacityMultiplier*=3
+                stats.blueFieldCapacity*=1.75
+                stats.bluePollen*=1.5
+                stats.bluePollen*=1.35
+                stats.whitePollen*=1.35
+                stats.redPollen*=1.35
+                stats.convertRate*=2
+                stats.convertRateAtHive*=2
+                stats.bubblePollen*=2
+                stats.redBeeAbilityRate*=1.2
+                stats.blueBeeAbilityRate*=1.2
+                stats.whiteBeeAbilityRate*=1.2
+                stats.defense+=0.35
+                player.addEffect('diamondDrainPassive')
+                player.addEffect('bubbleBombsPassive')stats.capacity+=10000000
                 stats.capacityMultiplier*=2
                 stats.lootLuck*=2
                 stats.convertRate*=1.8
@@ -913,6 +927,57 @@ window.playerGear={
                 stats.beeAttack*=1.1
                 stats.convertRateAtHive*=2
                 player.addEffect('coconutHastePassive')
+                 stats.capacity+=3500000
+                stats.convertRate*=5
+                stats.instantRedConversion=window.applyPercentage(stats.instantRedConversion,0.15)
+                stats.instantBlueConversion=window.applyPercentage(stats.instantBlueConversion,0.15)
+                stats.instantWhiteConversion=window.applyPercentage(stats.instantWhiteConversion,0.15)
+                stats.instantWhiteConversion=window.applyPercentage(stats.instantWhiteConversion,0.1)
+                stats.whitePollen*=5
+                stats.whitePollen*=1.25
+                stats.redPollen*=1.25
+                stats.bluePollen*=1.25
+                stats.whiteBeeAttack+=2
+                stats.redBeeAttack+=2
+                stats.blueBeeAttack+=2
+                stats.defense+=0.1
+                stats.honeyAtHive*=1.1
+                player.addEffect('inspireCoconutsPassive')
+                player.addEffect('emergencyCoconutShieldPassive')
+                stats.capacityMultiplier*=2
+                stats.whiteFieldCapacity*=1.75
+                stats.goo*=1.75
+                stats.instantWhiteConversion=window.applyPercentage(stats.instantWhiteConversion,0.25)
+                stats.redBeeAbilityRate*=1.2
+                stats.blueBeeAbilityRate*=1.2
+                stats.whiteBeeAbilityRate*=1.2
+                stats.bluePollen*=1.35
+                stats.whitePollen*=5
+                stats.redPollen*=1.35
+                stats.whitePollen*=1.5
+                stats.honeyFromTokens*=1.5
+                stats.convertRate*=10
+                stats.defense+=10
+                player.addEffect('gummyMorphPassive')
+                player.addEffect('coinScatterPassive')
+                stats.capacityMultiplier*=2
+                stats.redFieldCapacity*=1.75
+                stats.redPollen*=1.75
+                stats.beeAttack*=1.25
+                stats.instantFlameConversion=window.applyPercentage(stats.instantFlameConversion,0.5)
+                stats.flamePollen*=2
+                stats.redBeeAbilityRate*=1.2
+                stats.blueBeeAbilityRate*=1.2
+                stats.whiteBeeAbilityRate*=1.2
+                stats.defense+=0.35
+                player.addEffect('xFlamePassive')
+                player.addEffect('ignitePassive')
+                player.addEffect('gummyStar')
+                player.addEffect('popStar')
+                player.addEffect('starSaw')
+                player.addEffect('scourchingStar')
+                player.addEffect('starShower')
+
             },
             desc:'A small bag.<br><br>+200 capacity',
             cost:['0 honey'],
