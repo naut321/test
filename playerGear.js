@@ -972,11 +972,7 @@ window.playerGear={
                 stats.defense+=0.35
                 player.addEffect('xFlamePassive')
                 player.addEffect('ignitePassive')
-                player.addEffect('gummyStar')
-                player.addEffect('popStar')
-                player.addEffect('starSaw')
-                player.addEffect('scourchingStar')
-                player.addEffect('starShower')
+                
 
             },
             desc:'A small bag.<br><br>+200 capacity',
