@@ -86,15 +86,15 @@ window.playerGear={
                 cylinder(x,y+1.25*0.5,z,0.16,0.15,10,0,0.9,0.9,90,0,0)
             },
             desc:'Four enhanced sprinklers made of durable artificial diamond!<br><br>Count: 4<br>Diameter: 11<br>Power: 25<br>Rate: 3s<br><br>Press "R" to place a sprinkler.',
-            cost:['4444444444 honey'],
+            cost:['1 honey'],
         },
         
         superSaturator:{
 
-            count:1,
-            diameter:15,
-            power:0.5,
-            rate:1,
+            count:5,
+            diameter:30,
+            power:1,
+            rate:0.5,
             mesh:function(x,y,z,box,cylinder){
 
                 cylinder(x,y+0.25,z,0.15,2.5,10,0.9,0.9,0.5,1,90,0,0)
@@ -115,8 +115,8 @@ window.playerGear={
                 cylinder(x,y+0.7,z,0.3,0.375,10,0.5,0.5,0.5,0,0,0,0.25,false)
                 cylinder(x,y+0.7,z,0.1,0.5,10,0.2,10,10,0,0,0,0.1,false)
             },
-            desc:'The ultimate sprinkler. Nobody knows how it works or where it came from.<br><br>Count: 1<br>Diameter: 15<br>Power: 50<br>Rate: 1s<br><br>Press "R" to place a sprinkler.',
-            cost:['55555555555 honey'],
+            desc:'67676767.<br><br>Count: 1<br>Diameter: 15<br>Power: 50<br>Rate: 1s<br><br>Press "R" to place a sprinkler.',
+            cost:['1 honey'],
         }
     },
     
@@ -664,12 +664,12 @@ window.playerGear={
                 stats.blueBeeAbilityRate*=1.2
                 stats.whiteBeeAbilityRate*=1.2
                 stats.bluePollen*=1.35
-                stats.whitePollen*=1.35
+                stats.whitePollen*=5
                 stats.redPollen*=1.35
                 stats.whitePollen*=1.5
                 stats.honeyFromTokens*=1.5
-                stats.convertRate*=1.75
-                stats.defense+=0.3
+                stats.convertRate*=10
+                stats.defense+=10
                 player.addEffect('gummyMorphPassive')
                 player.addEffect('coinScatterPassive')
 
