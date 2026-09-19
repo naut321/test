@@ -891,7 +891,28 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacity+=200
+                stats.capacity+=10000
+                stats.capacityMultiplier*=2
+                stats.lootLuck*=2
+                stats.convertRate*=1.8
+                stats.honeyFromTokens*=1.5
+                stats.whiteBeeAttack+=2
+                stats.whiteBombPollen*=1.5
+                stats.beeEnergy*=1.25
+                player.addEffect('petalStormPassive')
+                stats.movementCollection+=15
+                stats.walkSpeed*=1.2
+                stats.jumpPower*=1.4
+                stats.pollenFromCoconuts*=2
+                stats.goo*=1.25
+                stats.beeSpeed*=1.3
+                stats.honeyFromTokens*=1.25
+                stats.redPollen*=1.1
+                stats.bluePollen*=1.1
+                stats.whitePollen*=1.1
+                stats.beeAttack*=1.1
+                stats.convertRateAtHive*=2
+                player.addEffect('coconutHastePassive')
             },
             desc:'A small bag.<br><br>+200 capacity',
             cost:['0 honey'],
